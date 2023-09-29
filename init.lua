@@ -19,3 +19,14 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+
+-- Scroll down half a page with Ctrl+D
+vim.api.nvim_set_keymap('n', '<C-d>', ':resize -2<CR>', { noremap = true, silent = true })
+
+-- Scroll up half a page with Ctrl+U
+vim.api.nvim_set_keymap('n', '<C-u>', ':resize +2<CR>', { noremap = true, silent = true })
+
+-- Set relative line numbers as the default
+vim.cmd('set relativenumber')
+
