@@ -48,6 +48,17 @@ local plugins = {
     end,
   },
 
+  {
+    "normen/vim-pio",
+    config = function()
+      require("vim-pio").setup()
+    end,
+  },
+
+--  {
+--    "normen/vim-pio",
+--    lazy=false,
+--  }
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
