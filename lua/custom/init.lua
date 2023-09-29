@@ -23,3 +23,11 @@ autocmd("vimenter", {
   pattern = "*",
   command = "highlight Normal ctermbg=NONE guibg=NONE",
 })
+
+-- Automatically open nvim-tree when Neovim is started with a directory
+vim.cmd([[
+  autocmd StdinReadPre * let s:std_in=1
+  autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | NvimTreeFindFile | wincmd p | endif
+]])
+
+
