@@ -286,7 +286,8 @@ M.telescope = {
     ["<leader>pt"] = { "<cmd> Telescope terms <CR>", "Pick hidden term" },
 
     -- theme switcher
-    ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
+    -- i hate accidentally triggering this thing
+    -- ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
 
     ["<leader>ma"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
   },
