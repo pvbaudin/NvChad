@@ -1,0 +1,1 @@
+visincr.vba: call delete('/Users/pierre.baudin/.config/nvim/plugin/visincrPlugin.vim')|call delete('/Users/pierre.baudin/.config/nvim/autoload/visincr.vim')|call delete('/Users/pierre.baudin/.config/nvim/doc/visincr.txt')
